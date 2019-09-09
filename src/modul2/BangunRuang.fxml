@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modul2.Controller">
+   <children>
+      <AnchorPane prefHeight="180.0" prefWidth="54.0">
+         <children>
+            <Button layoutX="40.0" layoutY="61.0" mnemonicParsing="false" onAction="#squareAction" prefHeight="25.0" prefWidth="113.0" text="Square" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="5.0" />
+            <Button layoutX="12.0" layoutY="115.0" mnemonicParsing="false" onAction="#ballAction" prefHeight="25.0" prefWidth="113.0" text="Ball" AnchorPane.topAnchor="40.0" />
+            <Button layoutX="12.0" layoutY="165.0" mnemonicParsing="false" onAction="#tubeAction" prefHeight="25.0" prefWidth="113.0" text="Tube" AnchorPane.topAnchor="75.0" />
+         </children>
+      </AnchorPane>
+      <GridPane prefHeight="205.0" prefWidth="340.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="10.0" prefWidth="96.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="254.0" minWidth="10.0" prefWidth="239.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="215.0" minWidth="10.0" prefWidth="14.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="153.0" minHeight="4.0" prefHeight="35.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Length" />
+            <Label text="Width" GridPane.rowIndex="1" />
+            <Label text="Radius" GridPane.rowIndex="2" />
+            <Label text="Height" GridPane.rowIndex="3" />
+            <TextField fx:id="txtRadius" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtLength" disable="true" prefHeight="25.0" prefWidth="188.0" GridPane.columnIndex="1" />
+            <TextField fx:id="txtHeight" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtWidth" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#submitAction" text="Submit" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints maxWidth="375.0" minWidth="105.0" prefWidth="132.0" />
+      <ColumnConstraints maxWidth="375.0" minWidth="10.0" prefWidth="348.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
